@@ -39,6 +39,9 @@ require("lazy").setup({
 	require("plugins.misc"),
 	require("plugins.comment"),
 	require("plugins.vim-tmux-navigator"),
+	require("plugins.breadcrumbs"),
+	require("plugins.render-markdown"),
+	require("plugins.markdown-preview"),
 })
 
 -- The line beneath this is called `modeline`. See `:help modeline`
