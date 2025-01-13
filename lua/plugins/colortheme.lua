@@ -17,7 +17,7 @@ return {
 				},
 			})
 			-- Set the colorscheme
-			vim.cmd("colorscheme carbonfox")
+			vim.cmd("colorscheme duskfox")
 		end,
 	},
 }

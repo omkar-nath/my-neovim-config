@@ -13,6 +13,7 @@
   "image.nvim": { "branch": "master", "commit": "f1163cc2f6fff5b0de7c23c7502eee0df23a3e0e" },
   "indent-blankline.nvim": { "branch": "master", "commit": "259357fa4097e232730341fa60988087d189193a" },
   "lazy.nvim": { "branch": "main", "commit": "d8f26efd456190241afd1b0f5235fe6fdba13d4a" },
+  "live-server.nvim": { "branch": "main", "commit": "5fc8abb727827a09d0ce1b7757d0a4c7b5802b09" },
   "lspsaga.nvim": { "branch": "main", "commit": "5fce15331ac6c3a3ec3ac91ab0e85ed82f5cbba0" },
   "lualine.nvim": { "branch": "master", "commit": "2a5bae925481f999263d6f5ed8361baef8df4f83" },
   "markdown-preview.nvim": { "branch": "master", "commit": "a923f5fc5ba36a3b17e289dc35dc17f66d0548ee" },

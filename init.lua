@@ -42,6 +42,7 @@ require("lazy").setup({
 	require("plugins.breadcrumbs"),
 	require("plugins.render-markdown"),
 	require("plugins.markdown-preview"),
+	require("plugins.live-server"),
 })
 
 -- The line beneath this is called `modeline`. See `:help modeline`
