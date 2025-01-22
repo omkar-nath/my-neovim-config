@@ -33,7 +33,7 @@ require("lazy").setup({
 	require("plugins.lsp"),
 	require("plugins.autocompletion"),
 	require("plugins.none-ls"),
-	require("plugins.gitsigns"),
+	require("plugins.git"),
 	require("plugins.alpha"),
 	require("plugins.indent-blankline"),
 	require("plugins.misc"),
