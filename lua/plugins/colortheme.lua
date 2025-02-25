@@ -1,21 +1,29 @@
 return {
-	{
-		"zootedb0t/citruszest.nvim",
-		lazy = false, -- Ensure the plugin is loaded immediately
-		priority = 1000, -- Set a high priority to load it before other plugins
-		config = function()
-			-- Load the citruszest theme
-			require("citruszest").setup({
-				-- Add any custom configuration options here (optional)
-				transparent_background = true, -- Enable transparent background
-				styles = {
-					comments = { italic = true }, -- Customize comment style
-					keywords = { bold = true }, -- Customize keyword style
-				},
-			})
+	"rebelot/kanagawa.nvim",
+	priority = 1000, -- Load it early
+	config = function()
+		require("kanagawa").setup({
+			compile = false, -- Set to true to compile for performance
+			undercurl = true,
+			commentStyle = { italic = true },
+			functionStyle = {},
+			keywordStyle = { italic = true },
+			statementStyle = { bold = true },
+			typeStyle = {},
+			transparent = true, -- Set to true for transparency
+			dimInactive = false,
+			terminalColors = true,
+			colors = {},
+			overrides = function(colors)
+				return {}
+			end,
+			theme = "wave", -- Options: "wave", "dragon", "lotus"
+			background = {
+				dark = "wave",
+				light = "lotus",
+			},
+		})
 
-			-- Set the colorscheme
-			vim.cmd("colorscheme citruszest")
-		end,
-	},
+		vim.cmd("colorscheme kanagawa") -- Apply the theme
+	end,
 }

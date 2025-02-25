@@ -74,3 +74,26 @@ vim.keymap.set("n", "]d", vim.diagnostic.goto_next, { desc = "Go to next diagnos
 vim.keymap.set("n", "<leader>d", vim.diagnostic.open_float, { desc = "Open floating diagnostic message" })
 vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagnostics list" })
 vim.keymap.set("n", "<leader>d", vim.diagnostic.open_float)
+vim.g.molten_auto_open_output = false -- Prevents automatic opening of output
+vim.g.molten_image_provider = "image.nvim" -- Enables image output
+vim.g.molten_wrap_output = true -- Wrap text output
+vim.g.molten_virt_text_output = true -- Displays output as virtual text
+vim.g.molten_virt_lines_off_by_1 = true -- Aligns output with code cells
+
+vim.keymap.set("n", "<localleader>e", ":MoltenEvaluateOperator<CR>", { desc = "evaluate operator", silent = true })
+vim.keymap.set(
+	"n",
+	"<localleader>os",
+	":noautocmd MoltenEnterOutput<CR>",
+	{ desc = "open output window", silent = true }
+)
+vim.keymap.set("n", "<localleader>rr", ":MoltenReevaluateCell<CR>", { desc = "re-eval cell", silent = true })
+vim.keymap.set(
+	"v",
+	"<localleader>r",
+	":<C-u>MoltenEvaluateVisual<CR>gv",
+	{ desc = "execute visual selection", silent = true }
+)
+vim.keymap.set("n", "<localleader>oh", ":MoltenHideOutput<CR>", { desc = "close output window", silent = true })
+vim.keymap.set("n", "<localleader>md", ":MoltenDelete<CR>", { desc = "delete Molten cell", silent = true })
+vim.keymap.set("n", "<localleader>mx", ":MoltenOpenInBrowser<CR>", { desc = "open output in browser", silent = true })
